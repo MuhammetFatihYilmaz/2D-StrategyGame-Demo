@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6225082728f03849a386276d4fa9072, type: 3}
+  m_Name: BuildingBuyItem-UIItemSO
+  m_EditorClassIdentifier: 
+  uid: 7e0c4c93e24d24747935dfd72056520d
+  AssetReferenceType:
+    selectedMonoBehaviorIndex: 2
+    MonoReference: {fileID: 4264225875420701737, guid: 8a2f24f5395cbf64d8766760b963b694, type: 3}
+    AssetReference:
+      m_AssetGUID: 8a2f24f5395cbf64d8766760b963b694
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0

@@ -1,4 +1,5 @@
 using StrategyGame.ScriptableScripts;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -46,11 +47,11 @@ namespace StrategyGame.Management.ObjectPoolManagement
             objectPoolRegisterTypeList.Add(unit);
         }
 
-        public void PushPrefab<T>(T Prefab) where T: IObjectPoolItem
+        public void PushPrefab<T>(T Prefab, string UID = "") where T: IObjectPoolItem
         {
             if (Prefab == null) return;
             if (!(Prefab is MonoBehaviour)) return;
-            var unit = currentObjectPoolUnitList.Find(x => x.ObjectUnitType.Type == Prefab.GetType());
+            var unit = currentObjectPoolUnitList.Find(x => x.ObjectUnitType.Type == typeof(T) && x.ObjectUnitType.UID == UID);
 
             if (unit != null)
             {
@@ -58,7 +59,7 @@ namespace StrategyGame.Management.ObjectPoolManagement
             }
             else
             {
-                var prefabRegisterType = objectPoolRegisterTypeList.Find(x => x.Type == Prefab.GetType());
+                var prefabRegisterType = objectPoolRegisterTypeList.Find(x => x.Type == typeof(T) && x.UID == UID);
                 unit = new ObjectPoolUnit(prefabRegisterType);
                 unit.AddPrefabToPool(Prefab);
                 currentObjectPoolUnitList.Add(unit);
@@ -68,13 +69,13 @@ namespace StrategyGame.Management.ObjectPoolManagement
             (Prefab as MonoBehaviour).transform.SetParent(this.transform);
         }
 
-        public async Task<T> PullPrefab<T>(Transform parent = null) where T: IObjectPoolItem
+        public async Task<T> PullPrefab<T>(Transform parent = null, string UID = "") where T: IObjectPoolItem
         {
-            var unit = currentObjectPoolUnitList.Find(x => x.ObjectUnitType.Type == typeof(T));
+            var unit = currentObjectPoolUnitList.Find(x => x.ObjectUnitType.Type == typeof(T) && x.ObjectUnitType.UID == UID);
 
             if (unit == null)
             {
-                var prefabType = objectPoolRegisterTypeList.Find(x => x.Type == typeof(T));
+                var prefabType = objectPoolRegisterTypeList.Find(x => x.Type == typeof(T) && x.UID == UID);
                 var addressableObj = AddressableInstantiate(prefabType.AssetReference);
                 await addressableObj;
 

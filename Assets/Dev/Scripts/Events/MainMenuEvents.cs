@@ -1,3 +1,4 @@
+using StrategyGame.Gameplay.GameMap;
 using System;
 
 namespace StrategyGame.Events
@@ -8,6 +9,7 @@ namespace StrategyGame.Events
         {
             public static Action OnStartGameButtonClicked;
             public static Action OnExitGameButtonClicked;
+            public static Action<GameMapSO> OnGameMapSelected;
         }
     }
 }

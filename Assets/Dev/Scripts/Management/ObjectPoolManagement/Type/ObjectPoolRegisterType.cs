@@ -7,10 +7,12 @@ namespace StrategyGame.Management.ObjectPoolManagement
     {
         public readonly Type Type;
         public readonly AssetReference AssetReference;
-        public ObjectPoolRegisterType(Type type, AssetReference assetReference)
+        public readonly string UID;
+        public ObjectPoolRegisterType(Type type, AssetReference assetReference, string uid = "")
         {
             Type = type;
             AssetReference = assetReference;
+            UID = uid;
         }
     }
 }

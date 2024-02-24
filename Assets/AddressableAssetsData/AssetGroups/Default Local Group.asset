@@ -25,6 +25,42 @@ MonoBehaviour:
     m_Address: Assets/Dev/Prefabs/UI/Window/LoadingWindow/LoadingWindow.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 7c85cae1d7910a646bc491fe88a22916
+    m_Address: Assets/Dev/Prefabs/Gameplay/GameMap/GameMap.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 53c5f6503ba5a854abad2c6f927f9f4b
+    m_Address: Assets/Dev/Prefabs/UI/Window/InGameplayWindow/InGameplayWindow.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0a8a9148e004868429ef105b3958ac88
+    m_Address: Assets/Dev/Prefabs/UI/Window/MainMenuWindow/SelectMapPanel/SelectMapItem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8a2f24f5395cbf64d8766760b963b694
+    m_Address: Assets/Dev/Prefabs/UI/Window/InGameplayWindow/ProductionPanel/BuildingBuyItem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 972d629bab9292840ba2d7cd86e9e6a0
+    m_Address: Assets/Dev/Prefabs/Gameplay/Building/Barracks.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1d993a3a8f7842146bb96e6fca327468
+    m_Address: Assets/Dev/Prefabs/Gameplay/Building/PowerPlant.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6d59c77a6faf1d941bed5f36123e9805
+    m_Address: Assets/Dev/Prefabs/Gameplay/GameElement/GameInputHandler/GameInputHandler.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8562a7035dac05348987ee1e1e4044f5
+    m_Address: Assets/Dev/Prefabs/Gameplay/Building/ProduceUnit/Barracks/ArcherProduceUnit.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8b5a914ded36162489685c16f3483ffa
+    m_Address: Assets/Dev/Prefabs/UI/Window/InGameplayWindow/InformationPanel/UnitBuyItem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3f66b74243616724690844c227231b66, type: 2}
   m_SchemaSet:

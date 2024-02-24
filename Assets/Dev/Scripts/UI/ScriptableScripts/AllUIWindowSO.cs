@@ -3,9 +3,9 @@ using StrategyGame.ScriptableScripts;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace StrategyGame.UI.ScriptableScripts
+namespace StrategyGame.UI.ScriptableScripts.Window
 {
-    [CreateAssetMenu(fileName = nameof(AllUIWindowSO), menuName = "StrategyGame/UI/" + nameof(AllUIWindowSO))]
+    [CreateAssetMenu(fileName = nameof(AllUIWindowSO), menuName = "StrategyGame/UI/Window/" + nameof(AllUIWindowSO))]
     public class AllUIWindowSO : PoolPrefabSO
     {
         [field: SerializeField] public List<UIWindowSO> AllUIWindowSOList { get; private set; }

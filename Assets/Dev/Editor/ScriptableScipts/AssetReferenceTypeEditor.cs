@@ -8,7 +8,7 @@ namespace StrategyGame.Editor.ScriptableScripts
 {
     [CustomEditor(typeof(AssetReferenceBaseSO), true)]
 
-    public class AssetReferenceTypeEditor : UnityEditor.Editor
+    public class AssetReferenceTypeEditor : GameBaseSOEditor
     {
         public override void OnInspectorGUI()
         {

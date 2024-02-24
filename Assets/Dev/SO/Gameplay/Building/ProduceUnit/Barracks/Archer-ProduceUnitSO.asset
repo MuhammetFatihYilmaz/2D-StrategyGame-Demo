@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c4463ef15662641b5f7a87de89ee7a, type: 3}
+  m_Name: Archer-ProduceUnitSO
+  m_EditorClassIdentifier: 
+  uid: d7385d6c431ec8d41a8c0c67de714c23
+  AssetReferenceType:
+    selectedMonoBehaviorIndex: 0
+    MonoReference: {fileID: 3530009939901681437, guid: 8562a7035dac05348987ee1e1e4044f5, type: 3}
+    AssetReference:
+      m_AssetGUID: 8562a7035dac05348987ee1e1e4044f5
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  <Name>k__BackingField: Archer
+  <Icon>k__BackingField: {fileID: -1218508188, guid: da14cca636d102c4386a29d9d79ef31c, type: 3}

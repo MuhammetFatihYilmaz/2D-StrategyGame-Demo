@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2574d3cd344c7a4988e5a80b63f1cfa, type: 3}
   m_Name: AllUIWindowSO
   m_EditorClassIdentifier: 
+  uid: 03fa105f10f0abb4998ff849e36119ec
   <AllUIWindowSOList>k__BackingField:
   - {fileID: 11400000, guid: b9c44c2338119184da9dd24af3902c84, type: 2}
   - {fileID: 11400000, guid: 31d7f1dde4622ca499359b4a255fc428, type: 2}
+  - {fileID: 11400000, guid: 68757d5475c59db4fb1a1936ffd972ec, type: 2}

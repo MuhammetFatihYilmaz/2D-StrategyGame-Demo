@@ -1,6 +1,9 @@
 using StrategyGame.Events;
 using StrategyGame.GameCore.CoreStates.GameplayState;
 using StrategyGame.GameCore.MVC;
+using StrategyGame.Gameplay.GameMap;
+using StrategyGame.Management.ObjectPoolManagement;
+using StrategyGame.Management.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,7 +24,7 @@ namespace StrategyGame.GameCore.CoreStates.MainMenuState
 
         public override void OnSet()
         {
-            GameEvents.MainMenuEvents.OnStartGameButtonClicked += OnStartGameButtonClicked;
+            GameEvents.MainMenuEvents.OnGameMapSelected += OnGameMapSelected;
             GameEvents.MainMenuEvents.OnExitGameButtonClicked += OnExitGameButtonClicked;
 
             gameCoreMainMenuStateView.LoadMainMenuWindow();
@@ -30,7 +33,7 @@ namespace StrategyGame.GameCore.CoreStates.MainMenuState
 
         public override void OnUnSet()
         {
-            GameEvents.MainMenuEvents.OnStartGameButtonClicked -= OnStartGameButtonClicked;
+            GameEvents.MainMenuEvents.OnGameMapSelected -= OnGameMapSelected;
             GameEvents.MainMenuEvents.OnExitGameButtonClicked -= OnExitGameButtonClicked;
 
             gameCoreMainMenuStateView.UnLoadMainMenuWindow();
@@ -38,10 +41,12 @@ namespace StrategyGame.GameCore.CoreStates.MainMenuState
         }
 
         #region Events
-        private void OnStartGameButtonClicked()
+        private void OnGameMapSelected(GameMapSO data)
         {
+            ObjectPoolManager.Instance.PullManager<SceneManager>().LoadScene(sceneType: SceneType.Game);
             StateDriver.SwitchState<GameCoreGameplayState>();
         }
+
         private void OnExitGameButtonClicked()
         {
 #if UNITY_STANDALONE
