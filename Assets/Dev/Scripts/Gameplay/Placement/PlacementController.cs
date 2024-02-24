@@ -13,6 +13,7 @@ namespace StrategyGame.Gameplay.Placement
         [SerializeField] private Grid placementGrid;
         [SerializeField] private SpriteRenderer placementCursorRenderer;
         [SerializeField] private LayerMask placementLayermask;
+        [SerializeField] private LayerMask unitLayermask;
 
         private BuildingSO currentSelectedBuildingSO;
         private GridPlacedBuildingData gridPlacementBuildingData;
@@ -59,7 +60,7 @@ namespace StrategyGame.Gameplay.Placement
             gridPlacementBuildingData.AddPlacedBuilding(placedBuildingOccupationData);
         }
 
-        public Vector2 GetPlacementPos()
+        private Vector2 GetPlacementPos()
         {
             RaycastHit2D hit = Physics2D.Raycast(runtimePlacementInputDataSO.PlacementIndicatorPos, Vector2.zero, 1f, placementLayermask);
             if (hit.collider != null)
@@ -68,6 +69,15 @@ namespace StrategyGame.Gameplay.Placement
             }
             return placementPos;
         }
+
+        private bool IsCursorOnUnit()
+        {
+            RaycastHit2D hit = Physics2D.CircleCast(runtimePlacementInputDataSO.PlacementIndicatorPos, 1.5f ,Vector2.zero, 1f, unitLayermask);
+            if (hit.collider != null) return true;
+
+            return false;
+        }
+
 
         private IEnumerator PlacementSelectSequence()
         {
@@ -83,7 +93,7 @@ namespace StrategyGame.Gameplay.Placement
                 currentOccupationData.BuildingSpawnPosition = placementGrid.WorldToCell(cursorPos);
                 currentOccupationData.BuildingSize = currentSelectedBuildingSO.Size;
 
-                isPositionCanPlace = gridPlacementBuildingData.IsBuildingCanPlace(currentOccupationData);
+                isPositionCanPlace = (gridPlacementBuildingData.IsBuildingCanPlace(currentOccupationData) && !IsCursorOnUnit());
 
                 placementCursorRenderer.material.color = isPositionCanPlace ? Color.white : Color.red;
                 placementCursorRenderer.transform.position = cursorPos;
