@@ -302,7 +302,7 @@ MonoBehaviour:
     m_Bits: 64
   nonPlacableLayermask:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 1920
 --- !u!114 &4074456425030174775
 MonoBehaviour:
   m_ObjectHideFlags: 0
