@@ -12,6 +12,7 @@ namespace StrategyGame.Gameplay.Building.ProduceUnit
     public class ProduceUnitAttackController : MonoBehaviour, IPointerClickHandler
     {
         [SerializeField] private LayerMask attackLayermask;
+        [SerializeField] private GameObject outline;
         private AttackableProduceUnitSO attackableProduceUnitSO;
         private RuntimeUnitAttackingInputDataSO runtimeUnitAttackingInputDataSO;
 
@@ -46,6 +47,7 @@ namespace StrategyGame.Gameplay.Building.ProduceUnit
         private IEnumerator AttackDetectSequence()
         {
             isAttackDetectSequenceStarted = true;
+            outline.SetActive(true);
             GameEvents.GameplayEvents.OnProduceUnitAttackDetectingStarted?.Invoke();
 
             while (isAttackDetectSequenceStarted)
@@ -76,6 +78,7 @@ namespace StrategyGame.Gameplay.Building.ProduceUnit
             }
 
             GameEvents.GameplayEvents.OnProduceUnitAttackDetectingEnded?.Invoke();
+            outline.SetActive(false);
             isAttackDetectSequenceStarted = false;
         }
 
