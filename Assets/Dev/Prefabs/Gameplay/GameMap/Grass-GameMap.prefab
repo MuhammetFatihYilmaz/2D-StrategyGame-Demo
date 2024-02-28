@@ -281,6 +281,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <PlacementController>k__BackingField: {fileID: 7146452621249395971}
   <Grid>k__BackingField: {fileID: 4074456425030174775}
+  <ObstacleTilemap>k__BackingField: {fileID: 1932959357261317803}
+  <ReplaceObstacleTile>k__BackingField: {fileID: 11400000, guid: 814efa3f622dd5c478e118f356e3de24, type: 2}
 --- !u!114 &7146452621249395971
 MonoBehaviour:
   m_ObjectHideFlags: 0

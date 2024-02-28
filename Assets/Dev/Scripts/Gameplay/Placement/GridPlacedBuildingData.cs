@@ -1,25 +1,61 @@
 using StrategyGame.Gameplay.Building;
+using StrategyGame.Management.ObjectPoolManagement;
+using StrategyGame.Management.RuntimeGameplayDataManagement;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 namespace StrategyGame.Gameplay.Placement
 {
     public class GridPlacedBuildingData
     {
         private Dictionary<BuildingBase, List<Vector3Int>> placedBuildingValuePair = new();
+        private RuntimeGameplayDataManager runtimeGameplayDataManager;
+
+        public GridPlacedBuildingData()
+        {
+            runtimeGameplayDataManager = ObjectPoolManager.Instance.PullManager<RuntimeGameplayDataManager>();
+        }
 
         public void AddPlacedBuilding(PlaceOccupyData placeData)
         {
             var placedPos = GetPlacePos(placeData);
             placedBuildingValuePair[placeData.PlacedBuilding] = placedPos;
+
+            SetGridObstacle(placedPos);
         }
 
         public void RemovePlacedBuilding(BuildingBase building)
         {
             if (!placedBuildingValuePair.ContainsKey(building)) return;
 
+            RemoveGridObstacle(placedBuildingValuePair[building]);
             placedBuildingValuePair.Remove(building);
+
+        }
+
+        private void SetGridObstacle(List<Vector3Int> placedPos)
+        {
+            Tilemap tilemap = runtimeGameplayDataManager.GetCurrentMap().ObstacleTilemap;
+            Tile replaceObstacleTile = runtimeGameplayDataManager.GetCurrentMap().ReplaceObstacleTile;
+
+            foreach (var pos in placedPos)
+            {
+                tilemap.SetTile(pos, replaceObstacleTile);
+            }
+            runtimeGameplayDataManager.GetCurrentMap().Grid.CreateGrid();
+        }
+
+        private void RemoveGridObstacle(List<Vector3Int> placedPos)
+        {
+            Tilemap tilemap = runtimeGameplayDataManager.GetCurrentMap().ObstacleTilemap;
+
+            foreach (var pos in placedPos)
+            {
+                tilemap.SetTile(pos, null);
+            }
+            runtimeGameplayDataManager.GetCurrentMap().Grid.CreateGrid();
         }
 
         private List<Vector3Int> GetPlacePos(PlaceOccupyData placeData)

@@ -32,7 +32,7 @@ namespace StrategyGame.Gameplay.PathFinding
             CreateGrid();
         }
 
-        private void CreateGrid()
+        public void CreateGrid()
         {
             Grid = new Node2D[GridSizeX, GridSizeY];
             worldBottomLeft = transform.position - Vector3.right * gridWorldSize.x / 2 - Vector3.up * gridWorldSize.y / 2;

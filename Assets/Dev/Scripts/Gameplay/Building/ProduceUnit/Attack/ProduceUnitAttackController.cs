@@ -58,6 +58,7 @@ namespace StrategyGame.Gameplay.Building.ProduceUnit
                 if (runtimeUnitAttackingInputDataSO.AttackingApplyTrigger && !isPositionCanAttack)
                 {
                     GameEvents.GameplayEvents.OnProduceUnitAttackDetectingDenied?.Invoke();
+                    isAttackDetectSequenceStarted = false;
                 }
 
                 if (runtimeUnitAttackingInputDataSO.AttackingApplyTrigger && isPositionCanAttack)
