@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Panel-SpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: c38877d986f5a714284720da5c9b0cb5, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -1185530699, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: 674918946, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: 1744856928, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: -16941647, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: -506010118, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: 743597834, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: -763957624, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: -745981015, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: 1758765437, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: 1771097260, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: 1872235308, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: 1674853086, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: -58523641, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: -1991536819, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: -729510163, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: 840174177, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: -87483016, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: -1338884692, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: 159060937, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: 781607354, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: 2026274381, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: 1201096696, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: 853022530, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: -1644407290, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: 1201552501, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  - {fileID: -1697197667, guid: f42b355717530c24dbfa402970ec36bd, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - PanelBackground_6
+  - PanelBackground_7
+  - PanelBackground_4
+  - PanelBackground_5
+  - PanelBackground_2
+  - PanelBackground_3
+  - PanelBackground_0
+  - PanelBackground_1
+  - PanelBackground_8
+  - PanelBackground_9
+  - PanelBackground_24
+  - PanelBackground_25
+  - PanelBackground_20
+  - PanelBackground_21
+  - PanelBackground_22
+  - PanelBackground_23
+  - PanelBackground_15
+  - PanelBackground_14
+  - PanelBackground_17
+  - PanelBackground_16
+  - PanelBackground_11
+  - PanelBackground_10
+  - PanelBackground_13
+  - PanelBackground_12
+  - PanelBackground_19
+  - PanelBackground_18
+  m_RenderDataMap: {}
+  m_Tag: Panel-SpriteAtlas
+  m_IsVariant: 0
