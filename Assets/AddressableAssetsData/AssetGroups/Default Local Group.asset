@@ -89,6 +89,10 @@ MonoBehaviour:
     m_Address: Assets/Dev/Prefabs/Gameplay/Enemy/Tower/ScoutTower.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 1df771815d6309f44b560a90b7ab3c00
+    m_Address: Assets/Dev/Prefabs/Gameplay/Building/HousePlant.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3f66b74243616724690844c227231b66, type: 2}
   m_SchemaSet:

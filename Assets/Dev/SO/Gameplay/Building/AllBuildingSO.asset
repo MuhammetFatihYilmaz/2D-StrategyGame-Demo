@@ -16,3 +16,4 @@ MonoBehaviour:
   <AllBuildingSOList>k__BackingField:
   - {fileID: 11400000, guid: 29e4024148d14f145b4724c6e5a4cad7, type: 2}
   - {fileID: 11400000, guid: 66a0188b43acfb64696019b95ab1c510, type: 2}
+  - {fileID: 11400000, guid: c60d7d591da25c6469ce7e581be40d5f, type: 2}
