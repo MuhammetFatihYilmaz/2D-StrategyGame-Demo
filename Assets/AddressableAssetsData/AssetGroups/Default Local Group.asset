@@ -61,6 +61,34 @@ MonoBehaviour:
     m_Address: Assets/Dev/Prefabs/UI/Window/InGameplayWindow/InformationPanel/UnitBuyItem.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 25f0a4a809920504eb37515df7571344
+    m_Address: Assets/Dev/Prefabs/Gameplay/Building/ProduceUnit/Barracks/PawnProduceUnit.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e577a94324fe59a4f8134568b6820b7f
+    m_Address: Assets/Dev/Prefabs/Gameplay/Building/ProduceUnit/Barracks/WarriorProduceUnit.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f0540c6081a3cf24ab2bd4ffd10a7993
+    m_Address: Assets/Dev/Prefabs/Gameplay/Enemy/BarrelEnemy.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 93fbb9a1541e9074691ed1a8e90ec4d7
+    m_Address: Assets/Dev/Prefabs/Gameplay/GameElement/EnemySpawnHandler/EnemySpawnHandler.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f3ac3b9fdbad0114bb9459ff557b372f
+    m_Address: Assets/Art/Gameplay/InGameplayCamera/InGameplayCamera.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2617b484f95fd5b44a13d51aa363e7ad
+    m_Address: Assets/Dev/Prefabs/Gameplay/GameMap/Farm-GameMap.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: cc0b529566e76e648910fade8ed4c634
+    m_Address: Assets/Dev/Prefabs/Gameplay/Enemy/Tower/ScoutTower.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3f66b74243616724690844c227231b66, type: 2}
   m_SchemaSet:

@@ -15,3 +15,4 @@ MonoBehaviour:
   uid: 5415a57f354d9674c9b9446ff31aaa39
   <GameMapSOList>k__BackingField:
   - {fileID: 11400000, guid: ea0b10df86fb3834da006b14161cb01c, type: 2}
+  - {fileID: 11400000, guid: b446b23dce41ba6429e61d7cf62c90e3, type: 2}

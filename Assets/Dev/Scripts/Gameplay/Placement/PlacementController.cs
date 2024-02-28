@@ -13,7 +13,7 @@ namespace StrategyGame.Gameplay.Placement
         [SerializeField] private Grid placementGrid;
         [SerializeField] private SpriteRenderer placementCursorRenderer;
         [SerializeField] private LayerMask placementLayermask;
-        [SerializeField] private LayerMask unitLayermask;
+        [SerializeField] private LayerMask nonPlacableLayermask;
 
         private BuildingSO currentSelectedBuildingSO;
         private GridPlacedBuildingData gridPlacementBuildingData;
@@ -29,7 +29,7 @@ namespace StrategyGame.Gameplay.Placement
         {
             gridPlacementBuildingData = new();
             placementCursorRenderer.gameObject.SetActive(false);
-            var allRuntimeInputDataSO = ObjectPoolManager.Instance.PullScriptable<AllRuntimeInputDataSO>();
+            var allRuntimeInputDataSO = ObjectPoolManager.Instance.PullScriptable<AllGameRuntimeInputDataSO>();
             runtimePlacementInputDataSO = allRuntimeInputDataSO.RuntimePlacementInputDataSO;
         }
 
@@ -70,9 +70,9 @@ namespace StrategyGame.Gameplay.Placement
             return placementPos;
         }
 
-        private bool IsCursorOnUnit()
+        private bool IsCursorOnNonPlacable()
         {
-            RaycastHit2D hit = Physics2D.CircleCast(runtimePlacementInputDataSO.PlacementIndicatorPos, 1.5f ,Vector2.zero, 1f, unitLayermask);
+            RaycastHit2D hit = Physics2D.CircleCast(runtimePlacementInputDataSO.PlacementIndicatorPos, 1.5f ,Vector2.zero, 1f, nonPlacableLayermask);
             if (hit.collider != null) return true;
 
             return false;
@@ -93,7 +93,7 @@ namespace StrategyGame.Gameplay.Placement
                 currentOccupationData.BuildingSpawnPosition = placementGrid.WorldToCell(cursorPos);
                 currentOccupationData.BuildingSize = currentSelectedBuildingSO.Size;
 
-                isPositionCanPlace = (gridPlacementBuildingData.IsBuildingCanPlace(currentOccupationData) && !IsCursorOnUnit());
+                isPositionCanPlace = (gridPlacementBuildingData.IsBuildingCanPlace(currentOccupationData) && !IsCursorOnNonPlacable());
 
                 placementCursorRenderer.material.color = isPositionCanPlace ? Color.white : Color.red;
                 placementCursorRenderer.transform.position = cursorPos;

@@ -1,5 +1,7 @@
+using StrategyGame.Events;
 using StrategyGame.Gameplay.GameMap;
 using StrategyGame.Management.ObjectPoolManagement;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,6 +20,16 @@ namespace StrategyGame.UI.Window.MainMenuWindow
             CreateSelectMapItems();
         }
 
+        private void OnEnable()
+        {
+            GameEvents.MainMenuEvents.OnGameMapSelected += OnGameMapSelected;
+        }
+
+        private void OnDisable()
+        {
+            GameEvents.MainMenuEvents.OnGameMapSelected -= OnGameMapSelected;
+        }
+
         private async void CreateSelectMapItems()
         {
             foreach (var map in allGameMapSO.GameMapSOList)
@@ -27,5 +39,12 @@ namespace StrategyGame.UI.Window.MainMenuWindow
                 task.Result.SetUIObjectData(map);
             }
         }
+
+        #region Events
+        private void OnGameMapSelected(GameMapSO map)
+        {
+            Hide();
+        }
+        #endregion
     }
 }

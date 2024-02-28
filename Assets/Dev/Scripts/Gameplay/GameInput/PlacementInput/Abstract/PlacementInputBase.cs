@@ -13,8 +13,9 @@ namespace StrategyGame.Gameplay.GameInput.Placement
         private bool isPlacementStarted;
         private void Awake()
         {
-            var allRuntimeInputDataSO = ObjectPoolManager.Instance.PullScriptable<AllRuntimeInputDataSO>();
+            var allRuntimeInputDataSO = ObjectPoolManager.Instance.PullScriptable<AllGameRuntimeInputDataSO>();
             RuntimePlacementInputDataSO = allRuntimeInputDataSO.RuntimePlacementInputDataSO;
+            RuntimePlacementInputDataSO.ResetData();
         }
 
         private void OnEnable()

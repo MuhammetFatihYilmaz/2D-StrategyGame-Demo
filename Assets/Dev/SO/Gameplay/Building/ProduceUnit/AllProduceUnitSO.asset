@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uid: f9a8d144cda01b34c991a009daa6b9f1
   <AllProduceUnitSOList>k__BackingField:
-  - {fileID: 11400000, guid: e98432350b26f114faf97981501cc228, type: 2}
+  - {fileID: 11400000, guid: dd1a31da65cf455458eba8adf1221bd3, type: 2}
+  - {fileID: 11400000, guid: 81652a0990a089e4aa7090f8d1f2c690, type: 2}
+  - {fileID: 11400000, guid: ac91ded190389de48b629d952d79b7ed, type: 2}

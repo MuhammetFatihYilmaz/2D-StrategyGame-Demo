@@ -44,3 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca8585635aed3364f85620ee43af2c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  cameraMovementInputValue:
+    <CameraMovementSpeed>k__BackingField: 0.1

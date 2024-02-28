@@ -12,7 +12,8 @@ namespace StrategyGame.Gameplay.Building
         [field: SerializeField] public BuildingType BuildingType { get; private set; }
         [field: SerializeField] public string Name { get; private set; }
         [field: SerializeField] public Sprite Icon { get; private set; }
+        [field: SerializeField] public int Health { get; private set; }
         [field: SerializeField] public Vector2Int Size { get; private set; } = Vector2Int.one;
-        [field: SerializeField] public List<ProduceUnitSO> ProduceUnitList { get; private set; }
+        [field: SerializeField] public List<ProduceUnitBaseSO> ProduceUnitList { get; private set; }
     }
 }

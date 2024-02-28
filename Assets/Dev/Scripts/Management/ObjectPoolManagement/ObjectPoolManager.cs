@@ -51,7 +51,8 @@ namespace StrategyGame.Management.ObjectPoolManagement
         {
             if (Prefab == null) return;
             if (!(Prefab is MonoBehaviour)) return;
-            var unit = currentObjectPoolUnitList.Find(x => x.ObjectUnitType.Type == typeof(T) && x.ObjectUnitType.UID == UID);
+
+            var unit = currentObjectPoolUnitList?.Find(x => x.ObjectUnitType?.Type == typeof(T) && x.ObjectUnitType?.UID == UID);
 
             if (unit != null)
             {

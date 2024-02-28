@@ -14,3 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uid: 171a6999d7b92094fa55afb2167ae3e3
   <RuntimePlacementInputDataSO>k__BackingField: {fileID: 11400000, guid: 7df28ff7373364f48a67b3342bb571f3, type: 2}
+  <RuntimeUnitMovementInputDataSO>k__BackingField: {fileID: 11400000, guid: 448b678fc2ef6064eb7339216f8a7905, type: 2}
+  <RuntimeUnitSpawnInputDataSO>k__BackingField: {fileID: 11400000, guid: 3c179608bd7e1cb44add267dfb437b27, type: 2}
+  <RuntimeUnitAttackingInputDataSO>k__BackingField: {fileID: 11400000, guid: f04d3729939ecf849ab82edba8c4bc7c, type: 2}
+  <RuntimeCameraMovementInputDataSO>k__BackingField: {fileID: 11400000, guid: df8a422acdeb9ca47a49e5a887b35a37, type: 2}

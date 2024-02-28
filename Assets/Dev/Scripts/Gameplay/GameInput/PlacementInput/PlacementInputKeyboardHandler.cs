@@ -4,11 +4,6 @@ namespace StrategyGame.Gameplay.GameInput.Placement
 {
     public class PlacementInputKeyboardHandler : PlacementInputBase
     {
-        protected override void SetPlacementCursor()
-        {
-            RuntimePlacementInputDataSO.PlacementIndicatorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        }
-
         protected override void SetPlacementInput()
         {
             if (Input.GetMouseButton(0))
@@ -19,6 +14,11 @@ namespace StrategyGame.Gameplay.GameInput.Placement
             {
                 RuntimePlacementInputDataSO.PlacementCancelTrigger = true;
             }
+        }
+
+        protected override void SetPlacementCursor()
+        {
+            RuntimePlacementInputDataSO.PlacementIndicatorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
     }
 }

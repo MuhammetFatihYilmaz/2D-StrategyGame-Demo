@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72c4463ef15662641b5f7a87de89ee7a, type: 3}
+  m_Script: {fileID: 11500000, guid: bd610e2c459beef4986f2ce93c5296a7, type: 3}
   m_Name: Archer-ProduceUnitSO
   m_EditorClassIdentifier: 
-  uid: d7385d6c431ec8d41a8c0c67de714c23
+  uid: af92a69c45cde854eb22255e9c601088
   AssetReferenceType:
     selectedMonoBehaviorIndex: 0
     MonoReference: {fileID: 3530009939901681437, guid: 8562a7035dac05348987ee1e1e4044f5, type: 3}
@@ -23,3 +23,7 @@ MonoBehaviour:
       m_EditorAssetChanged: 0
   <Name>k__BackingField: Archer
   <Icon>k__BackingField: {fileID: -1218508188, guid: da14cca636d102c4386a29d9d79ef31c, type: 3}
+  <Health>k__BackingField: 10
+  <ResistanceDamageType>k__BackingField: 0
+  <GivenDamageType>k__BackingField: 0
+  <DamageAmount>k__BackingField: 10

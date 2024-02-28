@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd610e2c459beef4986f2ce93c5296a7, type: 3}
+  m_Name: Warrior-ProduceUnitSO
+  m_EditorClassIdentifier: 
+  uid: 3c37db6b2d979c244b8a6e991ed1951c
+  AssetReferenceType:
+    selectedMonoBehaviorIndex: 0
+    MonoReference: {fileID: 3530009939901681437, guid: e577a94324fe59a4f8134568b6820b7f, type: 3}
+    AssetReference:
+      m_AssetGUID: e577a94324fe59a4f8134568b6820b7f
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  <Name>k__BackingField: Warrior
+  <Icon>k__BackingField: {fileID: 1741956530, guid: ec3668e790dd07c49a54aa9dce26c75b, type: 3}
+  <Health>k__BackingField: 10
+  <ResistanceDamageType>k__BackingField: 1
+  <GivenDamageType>k__BackingField: 1
+  <DamageAmount>k__BackingField: 2

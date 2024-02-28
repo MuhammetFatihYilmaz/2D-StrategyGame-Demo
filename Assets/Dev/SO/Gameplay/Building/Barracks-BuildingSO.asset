@@ -24,6 +24,9 @@ MonoBehaviour:
   <BuildingType>k__BackingField: 0
   <Name>k__BackingField: Barracks
   <Icon>k__BackingField: {fileID: 21300000, guid: 6d372cbad38bf6941a5bdb52a8b2cfd0, type: 3}
+  <Health>k__BackingField: 100
   <Size>k__BackingField: {x: 4, y: 4}
   <ProduceUnitList>k__BackingField:
-  - {fileID: 11400000, guid: e98432350b26f114faf97981501cc228, type: 2}
+  - {fileID: 11400000, guid: dd1a31da65cf455458eba8adf1221bd3, type: 2}
+  - {fileID: 11400000, guid: 81652a0990a089e4aa7090f8d1f2c690, type: 2}
+  - {fileID: 11400000, guid: ac91ded190389de48b629d952d79b7ed, type: 2}

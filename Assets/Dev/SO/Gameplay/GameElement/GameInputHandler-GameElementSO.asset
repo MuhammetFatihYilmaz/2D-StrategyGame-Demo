@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1885ef22a54bd1242a04548424b9e4b5, type: 3}
   m_Name: GameInputHandler-GameElementSO
   m_EditorClassIdentifier: 
-  uid: 094999d9ba2db564fbc39275039679a4
+  uid: 8ee7bf28d2616ac47a8ce89fd110268c
   AssetReferenceType:
     selectedMonoBehaviorIndex: 0
     MonoReference: {fileID: 6095696810071747376, guid: 6d59c77a6faf1d941bed5f36123e9805, type: 3}

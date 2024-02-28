@@ -136,6 +136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1776094818706651003}
+  mapSelectItemImage: {fileID: 165552928519078540}
+  mapSelectItemText: {fileID: 6493040269065286171}
 --- !u!1 &7066610100247876426
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ namespace StrategyGame.UI.Window.InGameplayWindow
         [SerializeField] private Image unitImage;
         [SerializeField] private TextMeshProUGUI unitNameText;
         private BuildingBase building;
-        private ProduceUnitSO produceUnitSO;
+        private ProduceUnitBaseSO produceUnitSO;
 
 
         public void SetUIObjectData(BuildingUnitBuyValue uiData)

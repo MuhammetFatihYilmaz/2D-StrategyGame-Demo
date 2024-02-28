@@ -8,16 +8,16 @@ namespace StrategyGame.UI.Window.LoadingWindow
     public class LoadingWindow : UIDisplayBase
     {
         private bool isLoadingStarted;
-        private List<CustomYieldInstruction> loadingTasks = new();
+        private List<CustomYieldInstruction> loadingTaskList = new();
 
         private IEnumerator LoadingTaskSequence()
         {
             isLoadingStarted = true;
             Show();
-            while (loadingTasks.Any())
+            while (loadingTaskList.Any())
             {
-                yield return loadingTasks[0];
-                loadingTasks.RemoveAt(0);
+                yield return loadingTaskList[0];
+                loadingTaskList.RemoveAt(0);
             }
             Hide();
             isLoadingStarted = false;
@@ -25,7 +25,7 @@ namespace StrategyGame.UI.Window.LoadingWindow
 
         public void StartLoadingTask(CustomYieldInstruction yieldInstruction)
         {
-            loadingTasks.Add(yieldInstruction);
+            loadingTaskList.Add(yieldInstruction);
             if (isLoadingStarted) return;
                 StartCoroutine(LoadingTaskSequence());
         }

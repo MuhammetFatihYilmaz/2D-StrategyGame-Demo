@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a74a98491a4e0f4caa0e667afd4f272, type: 3}
+  m_Name: Farm-GameMapSO
+  m_EditorClassIdentifier: 
+  uid: b97598ad3cb114946a895fcb10920eb6
+  AssetReferenceType:
+    selectedMonoBehaviorIndex: 0
+    MonoReference: {fileID: 6659220114367166020, guid: 2617b484f95fd5b44a13d51aa363e7ad, type: 3}
+    AssetReference:
+      m_AssetGUID: 2617b484f95fd5b44a13d51aa363e7ad
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  <Icon>k__BackingField: {fileID: 1695290966, guid: 51aa6b5e1acf1954da1674883e7da2d6, type: 3}
+  <Name>k__BackingField: Farm

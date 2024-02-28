@@ -12,7 +12,7 @@ namespace StrategyGame.GameCore.MVC
 
         protected async Task<U> LoadWindow<U>() where U : UIDisplayBase
         {
-            if (currentWindowsList.Any(x => x is U)) return null;
+            if (currentWindowsList.Any(x => x is U)) return default;
             var task = ObjectPoolManager.Instance.PullPrefab<U>(parent: this.transform);
             await task;
             currentWindowsList.Add(task.Result);
@@ -25,6 +25,7 @@ namespace StrategyGame.GameCore.MVC
             {
                 var window = currentWindowsList.Find(x => x.GetType() == typeof(U));
                 window.Hide();
+                ObjectPoolManager.Instance.PushPrefab((U)window);
                 currentWindowsList.Remove(window);
             }
         }

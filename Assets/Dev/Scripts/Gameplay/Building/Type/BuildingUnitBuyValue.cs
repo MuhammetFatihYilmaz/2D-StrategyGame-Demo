@@ -6,6 +6,6 @@ namespace StrategyGame.Gameplay.Building
     public struct BuildingUnitBuyValue: IUIDTO
     {
         public BuildingBase Building;
-        public ProduceUnitSO ProduceUnitSO;
+        public ProduceUnitBaseSO ProduceUnitSO;
     }
 }

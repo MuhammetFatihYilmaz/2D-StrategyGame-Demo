@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: decb53ddd2a0349498500738d596acbe, type: 3}
+  m_Name: Barrel-EnemySO
+  m_EditorClassIdentifier: 
+  uid: d84b84b9b795e9e43a7d0f89e94e258b
+  AssetReferenceType:
+    selectedMonoBehaviorIndex: 0
+    MonoReference: {fileID: 6521889813621673542, guid: f0540c6081a3cf24ab2bd4ffd10a7993, type: 3}
+    AssetReference:
+      m_AssetGUID: f0540c6081a3cf24ab2bd4ffd10a7993
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  <Health>k__BackingField: 10
+  <ResistanceDamageType>k__BackingField: 0

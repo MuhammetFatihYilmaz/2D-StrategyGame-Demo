@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1159b541875dbdb479f209fe77460678, type: 3}
   m_Name: AllGameElements
   m_EditorClassIdentifier: 
-  uid: da6c0b70b40ccfa4b9b7e88460e1ca18
+  uid: 4d7d4e9e60e28a643be543e3bb058532
   AllGameElementSOList:
   - {fileID: 11400000, guid: 40154ace92dfb194fb8b13411f5979a9, type: 2}
+  - {fileID: 11400000, guid: f2be51b7a834738468e69958a869401c, type: 2}
+  - {fileID: 11400000, guid: ea10e78b51d221c4a8a363ca58098e22, type: 2}
