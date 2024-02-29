@@ -2,7 +2,7 @@ using StrategyGame.Events;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace StrategyGame.UI.Window.MainMenuWindow
+namespace StrategyGame.UI.Window.MainMenuWindow.MainMenu
 {
     public class MainPanel : UIDisplayBase
     {

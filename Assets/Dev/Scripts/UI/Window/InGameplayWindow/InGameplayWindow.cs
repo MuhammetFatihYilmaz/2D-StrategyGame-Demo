@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using StrategyGame.UI.Window.InGameplayWindow.Production;
+using StrategyGame.UI.Window.InGameplayWindow.Settings;
 
 namespace StrategyGame.UI.Window.InGameplayWindow
 {

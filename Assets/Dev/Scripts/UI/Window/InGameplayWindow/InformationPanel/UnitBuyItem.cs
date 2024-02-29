@@ -6,7 +6,7 @@ using TMPro;
 using StrategyGame.Gameplay.Building;
 using StrategyGame.Events;
 
-namespace StrategyGame.UI.Window.InGameplayWindow
+namespace StrategyGame.UI.Window.InGameplayWindow.Information
 {
     public class UnitBuyItem : MonoBehaviour, IObjectPoolItem, IUIDTOProvider<BuildingUnitBuyValue>
     {

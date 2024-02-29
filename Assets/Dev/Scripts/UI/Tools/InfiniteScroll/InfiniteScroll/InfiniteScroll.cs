@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace StrategyGame.UI.Tools
+namespace StrategyGame.UI.Tools.InfiniteScroll
 {
     public class InfiniteScroll : MonoBehaviour
     {

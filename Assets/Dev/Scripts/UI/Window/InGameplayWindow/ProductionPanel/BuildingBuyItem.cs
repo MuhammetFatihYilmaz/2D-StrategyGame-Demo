@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using StrategyGame.Gameplay.Building;
 
-namespace StrategyGame.UI.Window.InGameplayWindow
+namespace StrategyGame.UI.Window.InGameplayWindow.Production
 {
     public class BuildingBuyItem : MonoBehaviour,IObjectPoolItem ,IUIDTOProvider<BuildingSO>
     {

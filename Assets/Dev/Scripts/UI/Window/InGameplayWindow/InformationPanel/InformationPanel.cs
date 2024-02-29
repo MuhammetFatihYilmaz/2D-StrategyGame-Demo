@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-namespace StrategyGame.UI.Window.InGameplayWindow
+namespace StrategyGame.UI.Window.InGameplayWindow.Information
 {
     public class InformationPanel : UIDisplayBase
     {

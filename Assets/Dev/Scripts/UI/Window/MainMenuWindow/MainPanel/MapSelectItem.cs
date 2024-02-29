@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-namespace StrategyGame.UI.Window.MainMenuWindow
+namespace StrategyGame.UI.Window.MainMenuWindow.MainMenu
 {
     public class MapSelectItem : MonoBehaviour, IObjectPoolItem, IUIDTOProvider<GameMapSO>
     {

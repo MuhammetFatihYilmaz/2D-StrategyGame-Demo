@@ -2,7 +2,7 @@ using StrategyGame.Events;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace StrategyGame.UI.Window.InGameplayWindow
+namespace StrategyGame.UI.Window.InGameplayWindow.Settings
 {
     public class SettingsPanel : UIDisplayBase
     {

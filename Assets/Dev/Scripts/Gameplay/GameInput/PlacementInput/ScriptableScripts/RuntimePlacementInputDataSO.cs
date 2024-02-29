@@ -6,7 +6,7 @@ namespace StrategyGame.Gameplay.GameInput.Placement
     [CreateAssetMenu(fileName = nameof(RuntimePlacementInputDataSO), menuName = "StrategyGame/Gameplay/GameInput/" + nameof(RuntimePlacementInputDataSO))]
     public class RuntimePlacementInputDataSO : GameBaseSO
     {
-        public Vector3 PlacementIndicatorPos;
+        public Vector2 PlacementIndicatorPos;
         public bool PlacementApplyTrigger;
         public bool PlacementCancelTrigger;
 
@@ -14,7 +14,7 @@ namespace StrategyGame.Gameplay.GameInput.Placement
         {
             PlacementApplyTrigger = false;
             PlacementCancelTrigger = false;
-            PlacementIndicatorPos = Vector3.zero;
+            PlacementIndicatorPos = Vector2.zero;
         }
     }
 }

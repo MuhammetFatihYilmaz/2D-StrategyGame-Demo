@@ -1,5 +1,6 @@
 using StrategyGame.Events;
-using System;
+using StrategyGame.UI.Window.MainMenuWindow.MainMenu;
+using StrategyGame.UI.Window.MainMenuWindow.SelectMap;
 using UnityEngine;
 
 namespace StrategyGame.UI.Window.MainMenuWindow

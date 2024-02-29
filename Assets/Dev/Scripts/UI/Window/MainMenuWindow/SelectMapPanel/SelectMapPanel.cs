@@ -1,11 +1,11 @@
 using StrategyGame.Events;
 using StrategyGame.Gameplay.GameMap;
 using StrategyGame.Management.ObjectPoolManagement;
-using System;
+using StrategyGame.UI.Window.MainMenuWindow.MainMenu;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace StrategyGame.UI.Window.MainMenuWindow
+namespace StrategyGame.UI.Window.MainMenuWindow.SelectMap
 {
     public class SelectMapPanel : UIDisplayBase
     {

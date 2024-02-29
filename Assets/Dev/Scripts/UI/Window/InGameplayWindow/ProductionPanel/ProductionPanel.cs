@@ -1,10 +1,10 @@
 using StrategyGame.Gameplay.Building;
 using StrategyGame.Management.ObjectPoolManagement;
-using StrategyGame.UI.Tools;
+using StrategyGame.UI.Tools.InfiniteScroll;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace StrategyGame.UI.Window.InGameplayWindow
+namespace StrategyGame.UI.Window.InGameplayWindow.Production
 {
     public class ProductionPanel : UIDisplayBase
     {
