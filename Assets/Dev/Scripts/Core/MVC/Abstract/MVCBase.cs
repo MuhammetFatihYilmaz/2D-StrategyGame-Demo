@@ -6,6 +6,16 @@ namespace StrategyGame.GameCore.MVC
     {
         protected T MVCDriver { get; private set; }
 
+        protected virtual void OnEnable()
+        {
+            
+        }
+
+        protected virtual void OnDisable()
+        {
+            
+        }
+
         public void InitializeDriver(IMVCDriver driver)
         {
             MVCDriver = (T)driver;

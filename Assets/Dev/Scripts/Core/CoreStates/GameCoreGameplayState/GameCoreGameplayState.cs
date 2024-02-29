@@ -19,6 +19,7 @@ namespace StrategyGame.GameCore.CoreStates.GameplayState
 
             GameEvents.GameplayEvents.OnSettingsMainMenuButtonClicked += OnSettingsMainMenuButtonClicked;
 
+            gameCoreGameplayStateView.StartLoadingWindow();
             gameCoreGameplayStateView.LoadInGameplayWindow();
             gameCoreGameplayStateController.LoadGameInputHandler();
             gameCoreGameplayStateController.LoadEnemySpawnHandler();

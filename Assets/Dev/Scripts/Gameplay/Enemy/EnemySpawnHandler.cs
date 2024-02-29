@@ -58,6 +58,7 @@ namespace StrategyGame.Gameplay.Enemy
                 Task enemyTask = CreateEnemy(randomEnemySOIndex);
                 yield return new WaitUntil(() => enemyTask.IsCompleted);
             }
+            GameEvents.GameplayEvents.OnEnemiesSpawnCompleted?.Invoke();
         }
 
         private async Task CreateEnemy(int randomEnemySOIndex)

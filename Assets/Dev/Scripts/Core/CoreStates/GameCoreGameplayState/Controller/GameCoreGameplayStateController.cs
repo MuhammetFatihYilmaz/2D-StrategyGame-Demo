@@ -17,14 +17,15 @@ namespace StrategyGame.GameCore.CoreStates.GameplayState
         private EnemySpawnHandler enemySpawnHandler;
         private InGameplayCameraHandler inGameplayCameraHandler;
 
-        private void OnEnable()
+
+        protected override void OnEnable()
         {
+            base.OnEnable();
             GameEvents.MainMenuEvents.OnGameMapSelected += OnGameMapSelected;
-
         }
-
-        private void OnDisable()
+        protected override void OnDisable()
         {
+            base.OnDisable();
             GameEvents.MainMenuEvents.OnGameMapSelected -= OnGameMapSelected;
         }
 

@@ -26,6 +26,7 @@ namespace StrategyGame.Events
 
             public static Action<GameMapBase> OnGameMapSpawned;
             public static Action OnGameMapUnSpawned;
+            public static Action OnEnemiesSpawnCompleted;
 
             public static Action<ProduceUnitBase> OnProduceUnitClicked;
             public static Action<MovableProduceUnitBase, Vector2> OnProduceUnitDestinationClicked;
