@@ -64,7 +64,7 @@ namespace StrategyGame.Gameplay.Building
         private bool IsCursorFarFromBuilding()
         {
             RaycastHit2D hit = Physics2D.Raycast(runtimeUnitSpawnInputDataSO.SpawnIndicatorPos, Vector2.zero, 1f, groundLayerMask);
-            if (hit.collider != null && (Vector2.Distance(transform.position, hit.point) < 3f))
+            if (hit.collider != null && (Vector2.Distance(transform.position, hit.point) < 4f))
             {
                 return false;
             }
