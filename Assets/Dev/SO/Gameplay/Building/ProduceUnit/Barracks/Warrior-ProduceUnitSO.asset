@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd610e2c459beef4986f2ce93c5296a7, type: 3}
   m_Name: Warrior-ProduceUnitSO
   m_EditorClassIdentifier: 
-  uid: 3c37db6b2d979c244b8a6e991ed1951c
+  uid: 1ab6973dc4fc5d046919c394dd532fae
   AssetReferenceType:
     selectedMonoBehaviorIndex: 0
     MonoReference: {fileID: 3530009939901681437, guid: e577a94324fe59a4f8134568b6820b7f, type: 3}

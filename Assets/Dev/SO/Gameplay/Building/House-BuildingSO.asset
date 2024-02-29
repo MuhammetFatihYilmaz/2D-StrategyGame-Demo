@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4064b035c32c84e43a1ec8e6b2741c96, type: 3}
   m_Name: House-BuildingSO
   m_EditorClassIdentifier: 
-  uid: c8dbded1d359edc43a6eb2dd5322d34d
+  uid: 62db1292900619b47807a874471bb75c
   AssetReferenceType:
     selectedMonoBehaviorIndex: 0
     MonoReference: {fileID: 1093745008937425002, guid: 1df771815d6309f44b560a90b7ab3c00, type: 3}

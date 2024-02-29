@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4064b035c32c84e43a1ec8e6b2741c96, type: 3}
   m_Name: Barracks-BuildingSO
   m_EditorClassIdentifier: 
-  uid: 49707dd5241b271428f6c6191f6a7ec3
+  uid: f82231f536d77884780ba530ad46c9cd
   AssetReferenceType:
     selectedMonoBehaviorIndex: 0
     MonoReference: {fileID: 2962927507851165345, guid: 972d629bab9292840ba2d7cd86e9e6a0, type: 3}

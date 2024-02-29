@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6225082728f03849a386276d4fa9072, type: 3}
   m_Name: MapSelectItem-UIItemSO
   m_EditorClassIdentifier: 
-  uid: 9f216c7340783bf42afb14bca0b82b9d
+  uid: 856aead96f0300b44a12a4aade050084
   AssetReferenceType:
-    selectedMonoBehaviorIndex: 1
+    selectedMonoBehaviorIndex: 0
     MonoReference: {fileID: 5380668702035642772, guid: 0a8a9148e004868429ef105b3958ac88, type: 3}
     AssetReference:
       m_AssetGUID: 0a8a9148e004868429ef105b3958ac88

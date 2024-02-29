@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d71f73a2083bfb34aadf8f194297a2bc, type: 3}
   m_Name: Game-SceneSO
   m_EditorClassIdentifier: 
+  uid: b1d9a557f93369a4794f462c15f43a35
   <SceneType>k__BackingField: 2
   <BuildIndex>k__BackingField: 2

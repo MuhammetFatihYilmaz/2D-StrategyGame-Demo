@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d71f73a2083bfb34aadf8f194297a2bc, type: 3}
   m_Name: Menu-SceneSO
   m_EditorClassIdentifier: 
+  uid: 699a80c0d0a51c04680d904aafd8a4a1
   <SceneType>k__BackingField: 1
   <BuildIndex>k__BackingField: 1

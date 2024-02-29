@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21063d737d6f3e94289fb2cac8d44f11, type: 3}
   m_Name: AllGameMapSO
   m_EditorClassIdentifier: 
-  uid: 5415a57f354d9674c9b9446ff31aaa39
+  uid: 20649909d12485440b069a7d43d45399
   <GameMapSOList>k__BackingField:
   - {fileID: 11400000, guid: ea0b10df86fb3834da006b14161cb01c, type: 2}
   - {fileID: 11400000, guid: b446b23dce41ba6429e61d7cf62c90e3, type: 2}

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6225082728f03849a386276d4fa9072, type: 3}
   m_Name: BuildingBuyItem-UIItemSO
   m_EditorClassIdentifier: 
-  uid: 7e0c4c93e24d24747935dfd72056520d
+  uid: 58654f6611908014a896ec374229f7e6
   AssetReferenceType:
-    selectedMonoBehaviorIndex: 2
+    selectedMonoBehaviorIndex: 0
     MonoReference: {fileID: 4264225875420701737, guid: 8a2f24f5395cbf64d8766760b963b694, type: 3}
     AssetReference:
       m_AssetGUID: 8a2f24f5395cbf64d8766760b963b694

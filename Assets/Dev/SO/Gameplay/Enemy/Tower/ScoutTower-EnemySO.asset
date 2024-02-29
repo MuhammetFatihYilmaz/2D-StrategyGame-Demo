@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: decb53ddd2a0349498500738d596acbe, type: 3}
   m_Name: ScoutTower-EnemySO
   m_EditorClassIdentifier: 
-  uid: ae914035a728f3b4b9bff3007d06aa54
+  uid: ccbc21589f1cb674d84261f2b3bec43b
   AssetReferenceType:
     selectedMonoBehaviorIndex: 0
     MonoReference: {fileID: 6521889813621673542, guid: cc0b529566e76e648910fade8ed4c634, type: 3}

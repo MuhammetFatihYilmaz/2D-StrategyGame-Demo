@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a74a98491a4e0f4caa0e667afd4f272, type: 3}
   m_Name: Farm-GameMapSO
   m_EditorClassIdentifier: 
-  uid: b97598ad3cb114946a895fcb10920eb6
+  uid: f8c8ca242c4914e4ca417ac970e72e98
   AssetReferenceType:
     selectedMonoBehaviorIndex: 0
     MonoReference: {fileID: 6659220114367166020, guid: 2617b484f95fd5b44a13d51aa363e7ad, type: 3}

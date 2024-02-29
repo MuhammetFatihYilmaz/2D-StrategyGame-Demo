@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4064b035c32c84e43a1ec8e6b2741c96, type: 3}
   m_Name: PowerPlant-BuildingSO
   m_EditorClassIdentifier: 
-  uid: 4e4ca1afb32e2774c8be1674628ab602
+  uid: 012784816e0c1f44598e0c1a0a191e86
   AssetReferenceType:
     selectedMonoBehaviorIndex: 0
     MonoReference: {fileID: 1093745008937425002, guid: 1d993a3a8f7842146bb96e6fca327468, type: 3}

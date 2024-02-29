@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd610e2c459beef4986f2ce93c5296a7, type: 3}
   m_Name: Archer-ProduceUnitSO
   m_EditorClassIdentifier: 
-  uid: af92a69c45cde854eb22255e9c601088
+  uid: bbfd43801f90b314ea2c9aac5a7dcd95
   AssetReferenceType:
     selectedMonoBehaviorIndex: 0
     MonoReference: {fileID: 3530009939901681437, guid: 8562a7035dac05348987ee1e1e4044f5, type: 3}

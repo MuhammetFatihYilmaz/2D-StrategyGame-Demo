@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd610e2c459beef4986f2ce93c5296a7, type: 3}
   m_Name: Pawn-ProduceUnitSO
   m_EditorClassIdentifier: 
-  uid: 8819c43f689975c4c97a67412c9a1c5c
+  uid: 13f14377dbd6086409a9c2aecc5654b2
   AssetReferenceType:
     selectedMonoBehaviorIndex: 0
     MonoReference: {fileID: 3530009939901681437, guid: 25f0a4a809920504eb37515df7571344, type: 3}

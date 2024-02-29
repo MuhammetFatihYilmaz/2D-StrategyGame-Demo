@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1885ef22a54bd1242a04548424b9e4b5, type: 3}
   m_Name: InGameplayCamera-GameElementSO
   m_EditorClassIdentifier: 
-  uid: 8387c7f96a4088c4b99f3575ad784346
+  uid: a5a05cf7e356f854899c628163684b78
   AssetReferenceType:
     selectedMonoBehaviorIndex: 0
     MonoReference: {fileID: 5455874497094299124, guid: f3ac3b9fdbad0114bb9459ff557b372f, type: 3}

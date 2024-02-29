@@ -1,6 +1,8 @@
 #if UNITY_EDITOR
 
+using StrategyGame.Management.ObjectPoolManagement;
 using StrategyGame.ScriptableScripts;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -19,7 +21,9 @@ namespace StrategyGame.Editor.ScriptableScripts
             EditorGUILayout.LabelField("Select a MonoBehavior Script:");
 
             if (!assetReferenceSO.AssetReferenceType.MonoReference) return;
-            MonoBehaviour[] monoBehaviors = assetReferenceSO.AssetReferenceType.MonoReference.GetComponents<MonoBehaviour>();
+            MonoBehaviour[] monoBehaviors = assetReferenceSO.AssetReferenceType.MonoReference.GetComponents<MonoBehaviour>()
+                .Where(x => typeof(IObjectPoolItem).IsAssignableFrom(x.GetType()))
+                .ToArray();
 
             string[] monoBehaviorNames = new string[monoBehaviors.Length];
             for (int i = 0; i < monoBehaviors.Length; i++)

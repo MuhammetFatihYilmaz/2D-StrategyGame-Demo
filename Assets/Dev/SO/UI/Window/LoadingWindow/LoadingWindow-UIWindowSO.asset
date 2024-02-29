@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ff8c989f7e826344a1e6bd340bfd5c5, type: 3}
   m_Name: LoadingWindow-UIWindowSO
   m_EditorClassIdentifier: 
-  uid: bb990d501a28541418afdbf0d8ae9928
+  uid: 0681dc317a1cb6d469ec7cf10dc56b04
   AssetReferenceType:
-    selectedMonoBehaviorIndex: 2
+    selectedMonoBehaviorIndex: 0
     MonoReference: {fileID: 2699647316614611156, guid: 8bdd143f5ab279c479695214a38772c1, type: 3}
     AssetReference:
       m_AssetGUID: 8bdd143f5ab279c479695214a38772c1
