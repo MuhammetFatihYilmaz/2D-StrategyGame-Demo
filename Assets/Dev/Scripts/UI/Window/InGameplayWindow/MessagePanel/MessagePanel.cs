@@ -57,6 +57,7 @@ namespace StrategyGame.UI.Window.InGameplayWindow.Message
         {
             var messageSO = allMessageSO.AllMessageSOList.Find(x => x.MessageMap.MessageType == MessageType.UnitSpawnPointNotAvailable);
 
+            if (messageTaskList.Contains(messageSO.MessageMap.Message)) return;
             StartMessageTask(messageSO.MessageMap.Message);
         }
         #endregion
