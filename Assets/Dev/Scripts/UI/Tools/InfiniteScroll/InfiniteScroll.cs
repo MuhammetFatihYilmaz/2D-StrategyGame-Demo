@@ -12,7 +12,7 @@ namespace StrategyGame.UI.Tools.InfiniteScroll
         [SerializeField] private RectTransform minEdgePosition;
         [SerializeField] private RectTransform maxEdgePosition;
         private List<RectTransform> contentItemList = new();
-        public Vector2 contentItemMovementValue;
+        private Vector2 contentItemMovementValue;
 
         public void Initialize(List<RectTransform> contentItemList)
         {
