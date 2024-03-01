@@ -101,8 +101,6 @@ namespace StrategyGame.Gameplay.Placement
 
         private void OnSettingsMainMenuButtonClicked()
         {
-            if (placedBuildingValuePair.Count <= 0) return;
-
             foreach (var building in placedBuildingValuePair)
             {
                 RemoveGridObstacle(placedBuildingValuePair[building.Key]);

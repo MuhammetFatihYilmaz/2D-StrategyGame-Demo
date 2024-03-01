@@ -6,6 +6,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 namespace StrategyGame.UI.Window.InGameplayWindow.Information
 {
@@ -31,6 +32,7 @@ namespace StrategyGame.UI.Window.InGameplayWindow.Information
             hideButton.onClick.AddListener(Hide);
             destroyBuildingButton.onClick.AddListener(DestroyBuilding);
             GameEvents.GameplayEvents.OnPlacedBuildingClicked += OnPlacedBuildingClicked;
+            GameEvents.GameplayEvents.OnSettingsMainMenuButtonClicked += OnSettingsMainMenuButtonClicked;
         }
 
         private void OnDisable()
@@ -38,6 +40,7 @@ namespace StrategyGame.UI.Window.InGameplayWindow.Information
             hideButton.onClick.RemoveListener(Hide);
             destroyBuildingButton.onClick.RemoveListener(DestroyBuilding);
             GameEvents.GameplayEvents.OnPlacedBuildingClicked -= OnPlacedBuildingClicked;
+            GameEvents.GameplayEvents.OnSettingsMainMenuButtonClicked -= OnSettingsMainMenuButtonClicked;
         }
 
         private void SetInformationValues()
@@ -102,6 +105,11 @@ namespace StrategyGame.UI.Window.InGameplayWindow.Information
             Show();
             currentSelectedBuilding = building;
             SetInformationValues();
+        }
+
+        private void OnSettingsMainMenuButtonClicked()
+        {
+            Hide();
         }
         #endregion
     }
