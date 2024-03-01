@@ -37,12 +37,14 @@ namespace StrategyGame.Gameplay.Placement
         {
             GameEvents.GameplayEvents.OnBuildingBuyItemClicked += OnBuildingBuyItemClicked;
             GameEvents.GameplayEvents.OnBuildingDestroyed += OnBuildingDestroyed;
+            gridPlacementBuildingData.Initialize();
         }
 
         private void OnDisable()
         {
             GameEvents.GameplayEvents.OnBuildingBuyItemClicked -= OnBuildingBuyItemClicked;
             GameEvents.GameplayEvents.OnBuildingDestroyed -= OnBuildingDestroyed;
+            gridPlacementBuildingData.Dispose();
         }
 
         private async void PlaceBuilding()

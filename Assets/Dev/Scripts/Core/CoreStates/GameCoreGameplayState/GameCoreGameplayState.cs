@@ -3,6 +3,7 @@ using StrategyGame.GameCore.CoreStates.MainMenuState;
 using StrategyGame.GameCore.MVC;
 using StrategyGame.Management.ObjectPoolManagement;
 using StrategyGame.Management.SceneManagement;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,7 +18,7 @@ namespace StrategyGame.GameCore.CoreStates.GameplayState
         {
             Debug.Log("GameCoreGameplayState Onset");
 
-            GameEvents.GameplayEvents.OnSettingsMainMenuButtonClicked += OnSettingsMainMenuButtonClicked;
+            GameEvents.GameplayEvents.OnAllBuildingsDestroyed += OnAllBuildingsDestroyed;
 
             gameCoreGameplayStateView.StartLoadingWindow();
             gameCoreGameplayStateView.LoadInGameplayWindow();
@@ -31,7 +32,7 @@ namespace StrategyGame.GameCore.CoreStates.GameplayState
         {
             Debug.Log("GameCoreGameplayState OnUnset");
 
-            GameEvents.GameplayEvents.OnSettingsMainMenuButtonClicked -= OnSettingsMainMenuButtonClicked;
+            GameEvents.GameplayEvents.OnAllBuildingsDestroyed -= OnAllBuildingsDestroyed;
 
             gameCoreGameplayStateView.UnLoadInGameplayWindow();
             gameCoreGameplayStateController.UnLoadGameMap();
@@ -46,7 +47,8 @@ namespace StrategyGame.GameCore.CoreStates.GameplayState
         }
 
         #region Events
-        private void OnSettingsMainMenuButtonClicked()
+
+        private void OnAllBuildingsDestroyed()
         {
             StateDriver.SwitchState<GameCoreMainMenuState>();
             ObjectPoolManager.Instance.PullManager<SceneManager>().LoadScene(sceneType: SceneType.Menu);

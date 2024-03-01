@@ -1,3 +1,4 @@
+using StrategyGame.Events;
 using StrategyGame.Gameplay.Building;
 using StrategyGame.Management.ObjectPoolManagement;
 using StrategyGame.Management.RuntimeGameplayDataManagement;
@@ -18,6 +19,16 @@ namespace StrategyGame.Gameplay.Placement
             runtimeGameplayDataManager = ObjectPoolManager.Instance.PullManager<RuntimeGameplayDataManager>();
         }
 
+        public void Initialize()
+        {
+            GameEvents.GameplayEvents.OnSettingsMainMenuButtonClicked += OnSettingsMainMenuButtonClicked;
+        }
+
+        public void Dispose()
+        {
+            GameEvents.GameplayEvents.OnSettingsMainMenuButtonClicked -= OnSettingsMainMenuButtonClicked;
+        }
+
         public void AddPlacedBuilding(PlaceOccupyData placeData)
         {
             var placedPos = GetPlacePos(placeData);
@@ -32,7 +43,6 @@ namespace StrategyGame.Gameplay.Placement
 
             RemoveGridObstacle(placedBuildingValuePair[building]);
             placedBuildingValuePair.Remove(building);
-
         }
 
         private void SetGridObstacle(List<Vector3Int> placedPos)
@@ -86,5 +96,22 @@ namespace StrategyGame.Gameplay.Placement
             }
             return true;
         }
+
+        #region Events
+
+        private void OnSettingsMainMenuButtonClicked()
+        {
+            if (placedBuildingValuePair.Count <= 0) return;
+
+            foreach (var building in placedBuildingValuePair)
+            {
+                RemoveGridObstacle(placedBuildingValuePair[building.Key]);
+                ObjectPoolManager.Instance.PushPrefab(building.Key, UID: building.Key.BuildingSO.UID);
+            }
+
+            placedBuildingValuePair.Clear();
+            GameEvents.GameplayEvents.OnAllBuildingsDestroyed?.Invoke();
+        }
+        #endregion
     }
 }
