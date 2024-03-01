@@ -7,6 +7,6 @@ namespace StrategyGame.Management.SceneManagement
     [CreateAssetMenu(fileName = nameof(AllSceneSO), menuName = "StrategyGame/Scene/" + nameof(AllSceneSO))]
     public class AllSceneSO : GameBaseSO
     {
-        public List<SceneSO> AllSceneList;
+        [field: SerializeField] public List<SceneSO> AllSceneList { get; private set; }
     }
 }
